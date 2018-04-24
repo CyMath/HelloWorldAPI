@@ -13,6 +13,8 @@ type JSONMessage struct {
 	Message string
 }
 
+// Server loads on port 8080
+
 func main() {
 
 	router := mux.NewRouter().StrictSlash(true)
