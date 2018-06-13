@@ -12,9 +12,9 @@ const REPLY =
         "message": "Hello message"
     };
 
-app.get('/', (req, res) => index(req, res));
-app.get('/JSON', (req, res) => JSONMessage(req, res));
-app.get('/:path', (req, res) => pathMessage(req, res));
+app.get('/', index);
+app.get('/JSON', JSONMessage);
+app.get('/:path', pathMessage);
 
 function index(request, response)
 {
